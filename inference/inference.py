@@ -1,18 +1,13 @@
 import argparse
 from pathlib import Path
 import random
-import sys
 import xml.etree.ElementTree as ET
 
 import numpy as np
 import torch
 import torch.nn.functional as F
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
-
-from model import DecoderLSTM, sample_sketch
+from model.model import DecoderLSTM, sample_sketch
 
 
 def parse_args():
