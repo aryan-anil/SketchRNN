@@ -10,11 +10,9 @@ Implementation of SketchRNN, inspired from:
 
 ```text
 SketchRNN/
-  data/              # QuickDraw .ndjson files, ignored by git
-  inference/         # Sampling and sketch-completion scripts
+  data/              # QuickDraw .ndjson files, download and place data here
+  inference/         # Sketch sampling scripts
   model/             # Encoder, decoder, mixture distribution, sampling code
-  runs/              # Training checkpoints, ignored by git
-  samples/           # Generated .npy/.svg outputs, ignored by git
   train/             # Dataset loader and training loop
 ```
 
