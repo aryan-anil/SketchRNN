@@ -8,8 +8,8 @@ import torch
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, random_split
 
-from dataset import SketchDataset, load_quickdraw_ndjson
-from model import DecoderLSTM, EncoderLSTM
+from train.dataset import SketchDataset, load_quickdraw_ndjson
+from model.model import DecoderLSTM, EncoderLSTM
 
 
 def parse_args():
